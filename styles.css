@@ -1,58 +1,78 @@
 body {
-    background-color: hsl(233, 47%, 7%);
-    font-size: 15px;   
-    color: aliceblue;
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  color: aliceblue;
 }
 .container {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 .card {
-    text-align: center;
+  text-align: center;
+  border-radius: 10px;
 }
 .highlighted {
-    color: blueviolet;
+  color: rgb(157, 102, 209);
 }
 img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 28%;
+  background-color: rgba(167, 83, 167, 0.356);
+  z-index: 2;
+}
+.picture {
+  overflow: hidden;
+}
+.listed_number p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+@media only screen and (max-width: 375px) and (max-width: 1440px) {
+  img {
     position: relative;
     width: 100%;
     height: auto;
     border-radius: 10px;
-}
-.filter {
-    position: absolute;
-    width: 100%;
-    height: 28%;
-    background-color: rgba(255, 0, 255, 0.356);
-    z-index: 2;
-}
-.picture {
-    overflow: hidden;
-}
-@media only screen and (max-width: 375px)  and (max-width: 1440px) {
- 
-    img {
-        position: relative;
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    .picture {
-    }
-    .card {
-        background-color: hsl(244, 38%, 16%);
-        margin-top: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .title {
-        font-family: 'Lexend Deca', sans-serif;
-    }
-    .numbers {
-        font-family: 'Neucha', cursive;
-    }
-    .text {
-        font-family: 'Inter', sans-serif;
-    }
   }
+  .picture {
+  }
+  .card {
+    background-color: hsl(244, 38%, 16%);
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+  }
+  .title {
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .numbers {
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 40px;
+  }
+  h3 {
+    color: rgb(245, 255, 255);
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .text {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+}
