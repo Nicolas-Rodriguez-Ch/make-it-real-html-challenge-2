@@ -1,30 +1,58 @@
 body {
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;   
+    color: aliceblue;
 }
-img {
-    width: 100%;
-    height: auto;
-}
-
 .container {
     display: flex;
     width: 100%;
     height: 100%;
 }
-.picture {
-    width: 200px;
-    height: 200px;
-}
 .card {
-    background-color: hsl(244, 38%, 16%);
+    text-align: center;
 }
-.title {
-    font-family: 'Lexend Deca', sans-serif;
+.highlighted {
+    color: blueviolet;
 }
-.numbers {
-    font-family: 'Neucha', cursive;
+img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
-.text {
-    font-family: 'Inter', sans-serif;
+.filter {
+    position: absolute;
+    width: 100%;
+    height: 28%;
+    background-color: rgba(255, 0, 255, 0.356);
+    z-index: 2;
 }
+.picture {
+    overflow: hidden;
+}
+@media only screen and (max-width: 375px)  and (max-width: 1440px) {
+ 
+    img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .picture {
+    }
+    .card {
+        background-color: hsl(244, 38%, 16%);
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .title {
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    .numbers {
+        font-family: 'Neucha', cursive;
+    }
+    .text {
+        font-family: 'Inter', sans-serif;
+    }
+  }
