@@ -11,21 +11,23 @@ body {
 .card {
   text-align: center;
   border-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
 }
 .highlighted {
-  color: rgb(157, 102, 209);
+  color: rgb(209, 102, 206);
 }
 img {
   position: relative;
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 .filter {
   position: absolute;
   width: 100%;
   height: 99%;
   border-radius: 14px;
-  background-color: rgba(167, 83, 167, 0.356);
+  background-color: rgba(209, 102, 206, 0.356);
   z-index: 2;
 }
 .picture {
@@ -34,46 +36,101 @@ img {
 }
 .listed_number p {
   font-family: "Inter", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 12px;
   padding-left: 20px;
   padding-right: 20px;
   letter-spacing: 1px;
   line-height: 150%;
 }
-@media only screen and (max-width: 375px) and (max-width: 1440px) {
+.title {
+  font-family: "Lexend Deca", sans-serif;
+}
+.numbers {
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 40px;
+}
+.text {
+  font-family: "Inter", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  
+}
+@media (max-width: 768px) {
   img {
     position: relative;
     width: 100%;
     height: auto;
-    border-radius: 10px;
   }
-
   .card {
-    background-color: hsl(244, 38%, 16%);
     margin-top: 60px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 60px;
   }
-  .title {
-    font-family: "Lexend Deca", sans-serif;
-  }
-  .numbers {
-    font-family: "Lexend Deca", sans-serif;
-    margin-bottom: 40px;
-  }
-  h3 {
+  .listed_number > h3 {
     color: rgb(245, 255, 255);
     font-size: 25px;
     margin-bottom: 5px;
   }
   .text {
-    font-family: "Inter", sans-serif;
     font-size: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     letter-spacing: 1px;
     line-height: 150%;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1445px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  .card{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 200px;
+    right: 300px;
+  }
+  .picture {
+    width: 50%;
+    position: absolute;
+    left: 1019px;
+  }
+  .title {
+    text-align: left;
+    position: absolute;
+    right: 425px;
+    width: 650px;
+    font-size: 34px;
+  }
+  .text{
+    position: absolute;
+    text-align: left;
+    top: 275px;
+    right: 425px;
+    width: 650px;
+    font-size: 28px;
+  }
+  .numbers {
+    font-size: 36px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 525px;
+    top: 450px;
+    width: 600px;
+  }
+  .listed_number > p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .listed_number h3 {
+    margin-bottom: 5px;
   }
 }
